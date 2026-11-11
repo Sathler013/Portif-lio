@@ -1,0 +1,40 @@
+{
+  "name": "matheus-sathler-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:export": "node tests/validate-export.mjs",
+    "test": "vitest run",
+    "format": "prettier --write src tests *.ts *.mjs *.md *.json",
+    "check": "npm run typecheck && npm test && npm run build && npm run test:export"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@hookform/resolvers": "^3.9.0",
+    "lucide-react": "^0.468.0",
+    "motion": "^12.0.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.54.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.9",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.10.0",
+    "simple-icons": "^16.37.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.7"
+  }
+}
